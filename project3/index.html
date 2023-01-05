@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TickTackToe</title>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    #table td {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    #restart {
+      font-size: 16px;
+      border: 10px solid transparent;
+      background-color: #4fbff3;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <table id="table">
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <div class="scoreboard" style="
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0;
+    border: 2px solid red;
+    width: 300px;
+    font-family: 'Quicksand', sans-serif; ">
+    <div class="player1" style="padding: 10px; text-align: center; font-weight: bold; border-bottom: 1px solid;">PLayer One</div>
+    <div class="player1" style="padding: 10px; text-align: center; font-weight: bold; border-bottom: 1px solid;">PLayer Two</div>
+    <div class="Player1score" style="padding: 10px; text-align: center;">0</div>
+    <div class="Player2score" style="padding: 10px; text-align: center;">0</div>
+  </div>
+  <button id="restart">Restart Game</button>
+  
+  <p>Current gamer: <span id="current-gamer"></span></p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

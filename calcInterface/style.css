@@ -1,0 +1,69 @@
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+.button {
+    border: 0.5px solid #999;
+    line-height: 80px;
+    background-color: darkcyan;
+    color: white;
+    /* line-width: 200px; */
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: rgb(243, 182, 13);
+    color: rgb(17, 16, 16);
+}
+#zero {
+    background-color:rgb(235, 16, 16);
+    /* width: 50%; */
+    /* grid-column: span 2; */
+    grid-column: span 2;
+    color: white;
+}
+#plus {
+    grid-row: span 2;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+    /* display: flex; */
+    /* text-align: center; */
+    /* margin: 25px; */
+    /* display: flex; */
+    padding: 20px;
+    /* top: 50%; */
+
+    /* position: absolute; */
+}
+
+.button:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
